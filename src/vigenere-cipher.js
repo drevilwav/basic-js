@@ -35,7 +35,7 @@ class VigenereCipheringMachine {
     let result = '';
     let keyIndex = 0;
 
-    for (let i = 0; i < message.length; i++) {
+    for (let i = 0; i < message.length; i += 1) {
       const char = message[i];
       if (char >= 'A' && char <= 'Z') {
         const messageCode = char.charCodeAt(0) - 65;
@@ -62,7 +62,7 @@ class VigenereCipheringMachine {
     let result = '';
     let keyIndex = 0;
 
-    for (let i = 0; i < encryptedMessage.length; i++) {
+    for (let i = 0; i < encryptedMessage.length; i += 1) {
       const char = encryptedMessage[i];
       if (char >= 'A' && char <= 'Z') {
         const encryptedCode = char.charCodeAt(0) - 65;
